@@ -2,7 +2,7 @@
 *************************************Datatype***********************
 
      JS datatype divide on the basic of how data is in memory and how it is access
-     Primitive:
+     Primitive:(Allocation in Stak)
         Numeric
         String
         Boolean
@@ -10,7 +10,7 @@
         notdefine 
         symbols
         Bigint
-     Reference(Non Primitive)
+     Reference(Non Primitive) Allocation in Heap
         Arrays
         Object
         function
@@ -39,11 +39,11 @@
     }
 
 
-//**************************************fuction**************************8 
+//************************************fuction******************
     // creating function as variable
 
     const myFunction = function(){
         console.log("The is variable type function");
     }
-    console.log(typeof myFunction);
+    console.log(typeof todolist);
     
