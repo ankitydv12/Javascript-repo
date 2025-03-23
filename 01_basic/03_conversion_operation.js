@@ -36,7 +36,7 @@ console.log("1"+2)
 console.log(2+"2");
 console.log(1+2+3+"hello")
 
-// postfix and prefix
+// postfix and prefix .....
 let a1 = 3
 let a2 = 4
 let a3 = a1 + a2++
