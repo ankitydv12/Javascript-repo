@@ -45,5 +45,6 @@
     const myFunction = function(){
         console.log("The is variable type function");
     }
-    console.log(typeof todolist);
+    console.log(myFunction);
+    
     
