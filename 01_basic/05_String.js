@@ -6,11 +6,10 @@ console.log(`username is ${username} and permission is ${permission}`);
 
 //creating string as object
 
-const name = new String("Ankit Yadav")
-console.log(name);
+const name = new String("Ankit Yadav") //object of String
 
 console.log(username.slice(0,3))
-//slice 
+//slice => Retrurn a Section of String
 
 //split
 

@@ -33,7 +33,7 @@ console.log(myArray.indexOf(5))
 //give the index of the element 
 
 
-console.log( myArrays3.join())
+console.log( myArrays3.join()) //by comma
 console.log( myArrays3.join('-'))
 console.log( myArrays3.join(" "))
 console.log( myArrays3.join("*"))
@@ -46,7 +46,7 @@ console.log( myArrays3.join("*"))
                 1 2 3 4 5
                 1*2*3*4*5
   */
-
+console.log("This is sorted array ",Array.from("579273298932").sort())
 
                 //*******  slice and splice*********
 

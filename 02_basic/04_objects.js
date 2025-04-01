@@ -16,4 +16,4 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.firstname);
+console.log(regularUser.fullname.userfullname.firstname);

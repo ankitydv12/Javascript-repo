@@ -3,7 +3,7 @@ let mydate = new Date()
 
 console.log(typeof mydate); //object 
 
-console.log(mydate.toDateString()) //change the date into readabe foam --- Thu Mar 27 2025
+console.log(mydate.toDateString()) //change the date into readabe foam --- Thu Mar 27 2025 . Return only  date
 console.log(mydate.toLocaleString()) // 3/27/2025, 12:11:31 AM
  
 // Creating dates 
@@ -15,13 +15,13 @@ console.log(new Date(2012,0,3,9,23).toLocaleString())
 
 let cusdate = new  Date("2024-01-12")
 /*
-    *YYYY-MM-DD
+    *YYYY-MM-DDYYYY-MM-DD
         *
  */
 
     let newDate = new Date()
     console.log(newDate);
-    console.log(newDate.getMonth() + 1);
+    console.log(newDate.getMonth() + 1); // mothns are 0 Indexed 
     console.log(newDate.getDay());
     
     // `${newDate.getDay()} and the time `

@@ -17,12 +17,12 @@ let string_value = String(a)
 */
 let x = -1  
 let bool_value = Boolean(x)
-//console.log(typeof bool_value,bool_value);
+console.log(typeof bool_value,bool_value);
 
 /*
     String "Not Empty" ------(Boolean)-------> true
     String ""          ------(Boolean)--------> false
-    Numeric 1 any non zer -------(Boolean)-------->true
+    Numeric 1 any non zero(0) -------(Boolean)-------->true
     Numeric 0  -------(Boolean)-------->        false           
 */
 
@@ -31,15 +31,15 @@ let bool_value = Boolean(x)
 //******************************Operation********************************
 
 let value = 1
-console.log(-value);
-console.log("1"+2)
-console.log(2+"2");
-console.log(1+2+3+"hello")
+console.log(-value); // output=>-1
+console.log("1"+2) // output=> 12
+console.log(2-"2"); // output=> 0
+console.log(1+2+3+"hello") // 6hello
 
 // postfix and prefix .....
 let a1 = 3
 let a2 = 4
-let a3 = a1 + a2++
+let a3 = ++a2 +( ++a2) //output => 11
 console.log(a3);
 
 /*
