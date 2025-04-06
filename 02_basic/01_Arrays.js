@@ -65,3 +65,4 @@ console.log(myArray.splice(0,3)); //cut element from 0 index to 3rd index(includ
 
 
 
+
