@@ -52,6 +52,8 @@ console.log("This is sorted array ",Array.from("579273298932").sort())
 
 console.log(myArray.slice(0,3)); // give a porstion of array and exclucde 3rd element
 console.log(myArray.splice(0,3)); //cut element from 0 index to 3rd index(include 3rd element)
+console.log(myArray.splice(1,3,['this','is','added']))  // added in the place of splice
+console.log(myArray)
 
 //*********************************DIFF B/W slice and splice***************************** 
 //       slice => No change in the original array
