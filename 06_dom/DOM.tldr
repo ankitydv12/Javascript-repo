@@ -121,9 +121,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 343.96775782300324,
-			"y": 1917.1477981642802,
-			"lastActivityTimestamp": 1744560521775,
+			"x": -248.74331563106782,
+			"y": 2775.265910503414,
+			"lastActivityTimestamp": 1744733998749,
 			"meta": {}
 		},
 		{
@@ -397,9 +397,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 877.5426181535593,
-			"y": -1488.6452041701396,
-			"z": 0.5,
+			"x": 392.014158490388,
+			"y": -2065.008327817848,
+			"z": 0.6561000000000001,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -684,12 +684,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:cQk0FqycwIgJ6evChhDiA",
+			"editingShapeId": "shape:RSvGN6rl-0woS__mcmfQI",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:cQk0FqycwIgJ6evChhDiA"
+				"shape:RSvGN6rl-0woS__mcmfQI"
 			],
-			"hoveredShapeId": "shape:cQk0FqycwIgJ6evChhDiA",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -1038,6 +1038,147 @@
 			},
 			"parentId": "page:page",
 			"index": "aU8hR",
+			"typeName": "shape"
+		},
+		{
+			"x": -322.94432301534493,
+			"y": 2525.1606401469644,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:RSvGN6rl-0woS__mcmfQI",
+			"type": "text",
+			"props": {
+				"color": "red",
+				"size": "m",
+				"w": 1152.0703125,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\tUse of DOM"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Assume You are in web where you have change all the Element where Class = \"h2-heading\""
+								}
+							]
+						},
+						{
+							"type": "orderedList",
+							"attrs": {
+								"start": 1
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "const allh2 = document.querySelectAll('.h2-heading') "
+												}
+											]
+										},
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Return a NodeList which contain the all element which h2-heading class"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "alllh2.forEach(function(para){para.style.padding =\"10px\"; "
+												}
+											]
+										},
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "para.style.color =\"red\";"
+												}
+											]
+										},
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "para.style.backgroundColor=\"green\"})"
+												}
+											]
+										},
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "      apply styling of css using JS DOM"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "ad7Ox",
 			"typeName": "shape"
 		},
 		{
@@ -1398,6 +1539,129 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -308.470666421994,
+			"y": 2026.492637398192,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:TGPQB5Vn_8orDuHMQnyjN",
+			"type": "text",
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"w": 1177.6539954468162,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 0.8581537772280042,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "document.querySelectorAll()=> select all the element and its return NodeList ."
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\t NodeList is like an array but not array ."
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\t Element are access by index"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\tElement inside the nodelist can ony  access by index"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Example:"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\ttemplist = document.querySelectorAll('li')"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "o/p => NodeList(3) [li, li, li]"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\ttemplist.forEach((l)=>l.style.background = 'red') => set background color red  "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "ab4rT",
+			"typeName": "shape"
+		},
+		{
 			"x": 62.70257746389018,
 			"y": 534.5354831801176,
 			"rotation": 0,
@@ -1552,7 +1816,7 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:color": "light-green"
+				"tldraw:color": "red"
 			},
 			"brush": null,
 			"scribbles": [],
@@ -1567,8 +1831,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 982.5,
-				"h": 489.1666564941406
+				"w": 1170.9105224609375,
+				"h": 630.7870483398438
 			},
 			"insets": [
 				false,
@@ -1583,7 +1847,7 @@
 			"isChatting": false,
 			"highlightedUserIds": [],
 			"isFocused": true,
-			"devicePixelRatio": 2.4000000953674316,
+			"devicePixelRatio": 2.0736000537872314,
 			"isCoarsePointer": false,
 			"isHoveringCanvas": true,
 			"openMenus": [],
@@ -1807,6 +2071,99 @@
 			},
 			"parentId": "page:page",
 			"index": "aH1WB",
+			"typeName": "shape"
+		},
+		{
+			"x": -318.2075074166876,
+			"y": 2302.492145522772,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:FR63399yu3_h5VrNxxMX3",
+			"type": "text",
+			"props": {
+				"color": "blue",
+				"size": "m",
+				"w": 896.6582762909053,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "document.getElementByClassName() => Return HTMLCollection()"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\t\t      not have a forEach()"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Converting HTMLCollection():"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\tArray.from(obj)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Example : Array.from(templist)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "ac0bE",
 			"typeName": "shape"
 		},
 		{
