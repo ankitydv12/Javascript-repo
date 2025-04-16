@@ -19,5 +19,31 @@
         parent.appendChild(list)
     }
     addlang("Java");
+    addlang("Python")
+    function addlangOpti(langname)
+    {
+        const list = document.createElement('li');
+        list.appendChild(document.createTextNode(langname));
+        document.querySelector('.lang').appendChild(list);
+
+    }
+    addlangOpti("Rust")
+
+
+    //Edit:
+    const seclang = document.querySelector('li:nth-child(2)')
+    // seclang.innerHTML = "Py"
+    const list = document.createElement('li')
+    list.innerHTML = "C"
+    seclang.replaceWith(list)
+
+    //edit
+    const seclang2 = document.querySelector('li:nth-child(1)')
+    list.innerHTML = "typescript"
+    seclang.replaceWith(list)
+
+    //remove:
+    const lastLang = documen.querySelector('li:last-child')
+    lastLang.remove()
 </script>
 </html>
