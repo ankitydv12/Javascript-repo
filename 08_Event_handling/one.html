@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    /*
+        all event in js are run sequencially
+    */
+
+    //perform = on click the owl image generate a alert
+        //method 1(onclick):
+            // document.getElementById('owl').onclick = function() {
+            //     alert("owl`")
+            // }
+        // method 2(addEventListner):=(3 parameter event, function, false)
+            // document.getElementById('owl').addEventListener('click', function() {
+            //     alert("owl")
+            // })
+        //method 3(old school):
+            // attachEvent()
+            //Jquery- on                  
+    console.log("********************************event Object****************************************")
+    // event object
+    // event object is a object that contains all the information about the event
+    // event object is passed to the function when the event is triggered
+    // event object is a object that contains all the information about the event
+    // mostly event are brower event and environment event
+    /* 
+        Thing to learn:
+        * tyepe
+        * timestamp
+        * defaultPrevented
+        * target
+        * toElement
+        * srcElement
+        * altKey
+        * ctrlKey
+        * shiftKey
+        * keyCode
+        Interview question:
+        * clientX
+        * clientY
+        * screenX
+        * screenY
+        * pageX
+        * pageY
+    */
+
+    console.log("************Syntax of addEventListener***************")
+    /*
+        addEventListener(event, function, useCapture);
+        event: the type of event to listen for (e.g., "click", "keydown", "submit").
+        function: the function to call when the event occurs.
+        useCapture:  A boolean value indicating whether the event should be captured during the capturing phase (true) or the bubbling phase (false). Default is false.
+            An event can be captured in two phases:
+                1. Capturing phase(true): The event starts from the root and goes down to the target element.
+                2. Bubbling phase(false): The event starts from the target element and goes up to the root.
+            In the below example, we are using the bubbling phase.
+                when we click on owl image it will first trigger the event on the child element and then on the parent element.
+    */
+
+
+    console.log("************Example of addEventListener Bubble Phase ***************")
+    // document.getElementById('images').addEventListener('click', function(event) {
+    //     //console.log(event);
+    //     console.log("clicked image")
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click', function(event) {
+    //     //console.log(event);
+    //     console.log("clicked owl")
+    // },false)
+
+ ///***************************************************************************   
+    // console.log("************Example of addEventListener Capture Phase ***************")
+    // document.getElementById('images').addEventListener('click', function(event) {
+    //     //console.log(event);
+    //     console.log("clicked image")
+    // },true)
+
+    // document.getElementById('owl').addEventListener('click', function(event) {
+    //     //console.log(event);
+    //     console.log("clicked owl")
+    // },true)
+
+    // console.log("************Example of addEventListener Stop Propagation ***************")
+    //Stopijng the event propagation
+    // document.getElementById('owl').addEventListener('click', function(event) {
+    //     //console.log(event);
+    //     console.log("clicked owl")
+    //     event.stopPropagation()
+    // },true)
+
+
+    //changing the default behavior of the event
+    // document.getElementById('google').addEventListener('click',function(event){
+    //     console.log('clicked google')
+    //     event.preventDefault()
+    // })
+    let a = document.querySelector('#images')
+
+    document.querySelector('#images').addEventListener('click',function(event){
+        if(event.target.tagName ==='IMG'){
+            a.removeChild(event.target.parentNode)
+        }
+    })
+
+</script>
+</html>
