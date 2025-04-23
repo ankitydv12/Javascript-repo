@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    
+    // setTimeout is not core javascript function it is part of browser api
+    // setTimeout is used to execute a function after a certain amount of time
+    // setTimeout(function(){},time)
+    // setTimeout is a function that takes two parameter
+    // one parameter : function (function or reference of function)
+    // 2nd parameter : time(in milliseconds)
+
+    //with function
+        // setTimeout(function(){
+        //     console.log("hello this is setTimeout and print after 2 sec");
+        // },2000)
+    //with referenece of function
+        function Namaste(){
+            const heading = document.querySelector('h1');
+            heading.innerHTML = "Namaste Duniya";
+            
+        }
+        const stout = setTimeout(Namaste,2000)
+        console.log("hello this is setTimeout and print after 2 sec");
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(stout);
+            console.log("stop the setTimeout");
+            
+        })
+</script>
+</html>

@@ -39,7 +39,6 @@
     // event object
     // event object is a object that contains all the information about the event
     // event object is passed to the function when the event is triggered
-    // event object is a object that contains all the information about the event
     // mostly event are brower event and environment event
     /* 
         Thing to learn:
@@ -115,11 +114,50 @@
     // })
     let a = document.querySelector('#images')
 
-    document.querySelector('#images').addEventListener('click',function(event){
-        if(event.target.tagName ==='IMG'){
-            a.removeChild(event.target.parentNode)
-        }
-    })
+    // document.querySelector('#images').addEventListener('click',function(event){
+    //     if(event.target.tagName ==='IMG'){
+    //         a.removeChild(event.target.parentNode)
+    //     }
+    // })
 
+    a.addEventListener('click',function(event){
+        // console.log(event.type)
+        // // return a string of the event type 
+        // console.log(event.timeStamp)
+        // // give the time stamp of the event and the time is measured from the time the page was loaded and time is in millisecond
+        // console.log(event.target);
+        // //The acutal DOM element in which event is occurred 
+        // console.log(event.toElement);
+        // //The element the pointer moved to during a mouseout event.
+        // console.log(event.srcElement)
+        // // Same as target but it is used in IE
+        // // used for cross-browser compatibility
+        // console.log(event.altKey)
+        // // true if the alt key was pressed when the event was triggered
+        // console.log(event.ctrlKey)
+        // // true if the ctrl key was pressed when the event was triggered
+        // console.log(event.shiftKey)
+        // // true if the shift key was pressed when the event was triggered
+        // console.log("this is event keyCode ",event.keyCode)
+        // // The key code of the key that was pressed
+
+
+        //*******************************************************************************
+
+        // console.log(event.clientX);
+        // // The horizontal coordinate within the viewport (i.e., visible part of the browser) when the mouse event occurred.
+        // console.log(event.clientY);
+        // // The vertical coordinate within the viewport when the mouse event occurred.
+        // console.log(event.screenX);
+        // // The horizontal coordinate relative to the entire screen when the mouse event occurred.
+        // console.log(event.screenY);
+        // // The vertical coordinate relative to the entire screen when the mouse event occurred.
+        // console.log(event.pageX);
+        // // The horizontal coordinate relative to the entire document when the mouse event occurred.
+        // console.log(event.pageY);
+        // The vertical coordinate relative to the entire document when the mouse event occurred.
+        console.log(event.getKey())
+        
+    })  
 </script>
 </html>

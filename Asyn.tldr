@@ -75,9 +75,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": -77.42087752718334,
-			"y": 3872.6551342273688,
-			"lastActivityTimestamp": 1745084911280,
+			"x": -2575.452124874885,
+			"y": -418.297250752617,
+			"lastActivityTimestamp": 0,
 			"meta": {}
 		},
 		{
@@ -442,9 +442,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 178.24392279467304,
-			"y": -3662.0927199612506,
-			"z": 0.7290000000000001,
+			"x": 2575.452124874885,
+			"y": 418.297250752617,
+			"z": 0.1355650641637185,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -2774,12 +2774,10 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:MUuYUKB6NUE1IqC_uGHHa",
+			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:MUuYUKB6NUE1IqC_uGHHa"
-			],
-			"hoveredShapeId": "shape:MUuYUKB6NUE1IqC_uGHHa",
+			"selectedShapeIds": [],
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -3505,10 +3503,7 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:color": "orange",
-				"tldraw:geo": "cloud"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
@@ -3522,7 +3517,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1077,
+				"w": 939,
 				"h": 757
 			},
 			"insets": [
@@ -3540,7 +3535,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 2,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
+			"isHoveringCanvas": null,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,
