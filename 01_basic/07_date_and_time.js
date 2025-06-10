@@ -19,6 +19,8 @@ let cusdate = new  Date("2024-01-12")
         *
  */
 
+    
+
     let newDate = new Date()
     console.log(newDate);
     console.log(newDate.getMonth() + 1); // mothns are 0 Indexed 

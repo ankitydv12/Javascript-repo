@@ -36,6 +36,8 @@ console.log(`The balance is ${x} and the value is ${balance}`)
                 let min = 10
                 let max = 20
                 console.log(Math.floor(Math.random()*(max-min)+min))
+
+                console.log(parseInt(Math.random()*1000)+1)
                  
     
         

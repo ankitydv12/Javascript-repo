@@ -14,5 +14,6 @@ console.log(username.slice(0,3))
 //split
 
 a  = username.split('i')
+console.log(a)
 // o/p =>Splite Return a Array 
 
