@@ -78,6 +78,8 @@ function showUI(data){
     const weather = data.weather[0].main
     const logo = data.weather[0].icon
 
+    console.log(weather)
+    
     const html = `<div class="result-div-inner">
         <img src="https://openweathermap.org/img/wn/${logo}@2x.png" alt="">
     </div>
@@ -92,6 +94,9 @@ function showUI(data){
     </div>`
 
     document.getElementById("result-div").innerHTML = html
-
+    if(weather == "Clouds")
+    {
+        document.getElementById("result-div").style.backgroundImage = 'url("06_dom/practice_projects/weather-app/Suunny.gif")'
+    }
     
 }
