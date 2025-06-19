@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Main">
+        <h1 style="color: rgb(115, 206, 206); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Geolocation API in JavaScript</h1>
+        <ul>
+            <li>allows user ti provide their geographical location to web application</li>
+            <li>Simple to web application</li>
+            <li>only works in secure contexts(HTTPS)</li>
+        </ul>
+        <p id="Latitude"></p>
+        <p id="longitude"></p>
+    </div>
+</body>
+<script>
+function getLocationWeather(){
+    if(navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(successCallback,errorCallback)
+    else
+        alert("This browser is not support Geolocation")
+}
+
+function successCallback(position){
+    const lat = position.coords.latitude;
+    const long = position.coords.longitude;
+
+    Weather(lat , long)
+}
+function errorCallback(error){
+    console.error(error)
+}
+
+
+
+async function Weather(lat ,long) {
+    try {
+    const apiKey = "ed9e99cf8e4ebd58e2de7ad96fe97191"
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+   const response = await fetch(url)
+   const data = await response.json()
+   console.log(data)
+   
+    } catch (error) {
+        console.log(error);
+        
+    }    
+}
+    
+getLocationWeather()
+</script>
+</html>

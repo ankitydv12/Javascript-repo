@@ -17,6 +17,56 @@ document.getElementById('submit-butn').addEventListener('click',function(e){
 
 })
 
+const GPSb = document.getElementById("GPS")
+GPSb.addEventListener('click',function(e){
+    e.preventDefault()
+    getLocationWeather()
+})
+console.log(`this is gps button ${GPSb}`)
+
+//Geolocation API
+
+function getLocationWeather(){
+    if(navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(successCallback,errorCallback)
+    else
+        alert("This browser is not support Geolocation")
+}
+
+
+function successCallback(position){
+    const lat = position.coords.latitude;
+    const long = position.coords.longitude;
+    
+    Weather(lat , long)
+}
+function errorCallback(error){
+    console.error(error)
+}
+function getLocationWeather(){
+    if(navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(successCallback,errorCallback)
+    else
+        alert("This browser is not support Geolocation")
+}
+
+
+async function Weather(lat ,long) {
+    try {
+    const apiKey = "ed9e99cf8e4ebd58e2de7ad96fe97191"
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+   const response = await fetch(url)
+   const data = await response.json()
+   console.log(data)
+   showUI(data)
+    } catch (error) {
+        console.log(error);
+        
+    }    
+}
+
+
+
 
 function showUI(data){
     console.log(data)
