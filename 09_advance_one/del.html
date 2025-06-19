@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const srchdiv = document.createElement('div')
+    const input = document.createElement('input') 
+    input.setAttribute('type','text')
+    input.setAttribute('id','findurl')
+    input.setAttribute('placeholder',"Enter the url")
+    input.style.borderRadius = "5px"
+    input.style.width = "200px"
+    const button = document.createElement("button")
+    button.innerHTML = "Find"
+
+    const crddiv = document.createElement("div")
+    crddiv.setAttribute("id","card")
+    const img = document.createElement("img")
+    img.style.width = "100px"
+    img.style.height = "100px"
+
+    button.addEventListener('click',function(event){
+    const url = 'https://api.github.com/users/ankitydv12'
+    const xhr = new XMLHttpRequest()
+    console.log(url);
+    
+    xhr.open("GET",url)
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState && xhr.status === 200){
+            const data = JSON.parse(this.responseText)
+            console.log(data);
+            
+            img.setAttribute('src',data.avatar_url)
+        }
+    }
+    xhr.send()
+    })
+   
+
+    srchdiv.appendChild(input)
+    srchdiv.appendChild(button)
+    crddiv.appendChild(img)
+    document.body.appendChild(srchdiv) 
+    document.body.appendChild(crddiv)
+</script>
+</html>

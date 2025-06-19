@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>htnml    Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -48,8 +48,8 @@
         * target
         * toElement
         * srcElement
-        * altKey
-        * ctrlKey
+        * altKeylKey
+        * ctr
         * shiftKey
         * keyCode
         Interview question:
@@ -75,14 +75,14 @@
     */
 
 
-    console.log("************Example of addEventListener Bubble Phase ***************")
+    // console.log("************Example of addEventListener Bubble Phase ***************")
     // document.getElementById('images').addEventListener('click', function(event) {
     //     //console.log(event);
     //     console.log("clicked image")
     // },false)
 
     // document.getElementById('owl').addEventListener('click', function(event) {
-    //     //console.log(event);
+    //     console.log(event);
     //     console.log("clicked owl")
     // },false)
 
@@ -115,9 +115,12 @@
     let a = document.querySelector('#images')
 
     // document.querySelector('#images').addEventListener('click',function(event){
+        
     //     if(event.target.tagName ==='IMG'){
     //         a.removeChild(event.target.parentNode)
     //     }
+    //     console.log(event.target);
+
     // })
 
     a.addEventListener('click',function(event){
@@ -132,7 +135,7 @@
         // console.log(event.srcElement)
         // // Same as target but it is used in IE
         // // used for cross-browser compatibility
-        // console.log(event.altKey)
+        console.log(event.altKey)
         // // true if the alt key was pressed when the event was triggered
         // console.log(event.ctrlKey)
         // // true if the ctrl key was pressed when the event was triggered

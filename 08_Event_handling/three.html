@@ -11,17 +11,33 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    
+
+
+//syntax:
+// setInterval(code)
+// setInterval(code, delay)
+
+// setInterval(func)
+// setInterval(func, delay)
+// setInterval(func, delay, arg1)
+// setInterval(func, delay, arg1, arg2)
+// setInterval(func, delay, arg1, arg2, /* …, */ argN)
+
+//agr1,...argN
+//Additional arguments which are passed through to the function specified by func once the timer expires.
+
+let stop
 function sayDate(str){{
     console.log("ankit",Date.now(),str);
     
 }}
 document.querySelector('#start').addEventListener('click',function(){
-    const stop = setInterval(sayDate,1000,'hello');
+     stop = setInterval(sayDate,1000,'hello');
 })
 document.querySelector('#stop').addEventListener('click',function(){
     
     clearInterval(stop);
+    stop = null
     console.log("stop the setInterval");
     
 })
