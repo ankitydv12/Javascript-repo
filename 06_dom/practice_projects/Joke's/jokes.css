@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: rgb(135, 118, 138);
+    height: 100vh;
+    margin: 0 20px;
+    display: flex;
+    /* Turns a container into a flex container, which gives you powerful tools to align and position child elements. */
+    justify-content: center; /* this for along horizontal or x axis */
+    align-items: center;
+}
+
+.container{
+    background-color:rgb(235, 232, 233);
+    border: 2px solid rgb(110, 174, 213);
+    border-radius: 6px;
+    text-align: center;
+     /* used for inline element like img , link , button,span  */
+    padding: 50px;
+    box-shadow: 0 12px 20px rgb(128, 171, 188);
+    min-width: 200px
+   
+}
+
+.container h3{
+    position: relative;
+    bottom: 35px;
+    font-weight: 400;
+    font-size: 22px;
+    
+}
+
+.jokesdiv{
+    margin: 50px auto;
+    max-width: 800px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.jokesbutton{
+    position: relative;
+    top: 40px;
+    border: 0px ;
+    background-color: rgb(95, 95, 255);
+    border-radius: 10px;
+    color: white;
+    padding: 13px 45px ;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.jokesGeneratorBtn:active {
+  transform: scale(0.98);
+}
+
+.jokesGeneratorBtn:focus {
+  outline: 0;
+}
+
+.jokesGeneratorBtn:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
